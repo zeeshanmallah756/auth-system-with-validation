@@ -1,0 +1,183 @@
+/* =========================================
+   AUTH HEADER
+========================================= */
+.auth-header {
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.auth-header h2 {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.auth-header p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* =========================================
+   FORM
+========================================= */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"] {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    outline: none;
+    transition: var(--transition);
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* =========================================
+   MAIN MESSAGE
+========================================= */
+.form-msg {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    display: none; /* hidden by default */
+    transition: var(--transition);
+}
+
+.form-msg.error {
+    background-color: #b91c1c;
+    color: #fee2e2;
+}
+
+.form-msg.success {
+    background-color: #15803d;
+    color: #d1fae5;
+}
+
+/* =========================================
+   CHECKBOXES
+========================================= */
+.custom-input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    position: relative;
+}
+
+.custom-input.checkbox input {
+    opacity: 0;
+    position: absolute;
+}
+
+.custom-input.checkbox .checkmark {
+    width: 18px;
+    height: 18px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    transition: var(--transition);
+}
+
+.custom-input.checkbox input:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 12px;
+    border: solid var(--accent);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+.form-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+button {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+}
+
+.btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+    background: var(--border);
+    color: white;
+}
+
+/* =========================================
+   AUTH FOOTER / LINKS
+========================================= */
+.auth-footer {
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 0.85rem;
+}
+
+.auth-footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Align forgot password to right */
+form .auth-footer {
+    text-align: right;
+    margin-top: 0.8rem;
+}

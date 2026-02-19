@@ -40,11 +40,11 @@
                 <?php
                 if ($file === "login.php") {
                 ?>
-                    <a href="register.php">register</a>
+                    <a href="register.php">Register</a>
                 <?php
                 } elseif ($file === "register.php") {
                 ?>
-                    <p><a href="login.php">Login</a></p>
+                    <a href="login.php">Login</a>
                 <?php
                 }
                 ?>
