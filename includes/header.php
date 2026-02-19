@@ -20,9 +20,18 @@
     ?>
         <link rel="stylesheet" href="assets/css/register.css">
     <?php
-    } elseif($file === "login.php") {
+    } elseif ($file === "login.php") {
     ?>
         <link rel="stylesheet" href="assets/css/login.css">
+    <?php
+    } elseif ($file === "verify_otp.php") {
+    ?>
+        <link rel="stylesheet" href="assets/css/verify_otp.css">
+    <?php
+    } elseif ($file === "forget_password.php") {
+    ?>
+        <link rel="stylesheet" href="assets/css/forget_password.css">
+
     <?php
     }
 
@@ -42,7 +51,7 @@
                 ?>
                     <a href="register.php">Register</a>
                 <?php
-                } elseif ($file === "register.php") {
+                } else{
                 ?>
                     <a href="login.php">Login</a>
                 <?php
