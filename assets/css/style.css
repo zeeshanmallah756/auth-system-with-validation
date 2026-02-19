@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(228, 228, 255, 0.767);
+}
+
+#header{
+    background: red;
+    padding: 1.8rem 0;
+}
+
+#navbar{
+    display: flex;
+}
+
+#logo{
+    width: 50%;
+}
+#logo p{
+    position: relative;
+    left: 7rem;
+}
+
+#navlinks{
+    width: 50%;
+}
+#navlinks p{
+    position: absolute;
+    right: 7rem;
+    /* left: 0; */
+}
+
+
+
+/* container */
+.container{
+    background-color: aqua;
+    min-height: 100vh;
+}
+
+/* footer */
+
+#footer{
+    background: brown;
+    padding: 0.8rem 0;
+}
+#footer p{
+    text-align: center;
+}
+
+
+/* register page */
+.register-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form-div{
+    margin-top: 2rem;
+}
