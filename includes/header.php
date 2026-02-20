@@ -5,36 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    if (isset($is_admin) && $is_admin == true) {
-    ?>
-        <link rel="stylesheet" href="../assets/css/style.css">
-    <?php
-    } else {
-    ?>
-        <link rel="stylesheet" href="assets/css/style.css">
-    <?php
+
+    if (function_exists('print_style')) {
+        print_style();
     }
-    $file = basename($_SERVER['PHP_SELF']) ?? NULL;
-
-    if ($file === "register.php") {
-    ?>
-        <link rel="stylesheet" href="assets/css/register.css">
-    <?php
-    } elseif ($file === "login.php") {
-    ?>
-        <link rel="stylesheet" href="assets/css/login.css">
-    <?php
-    } elseif ($file === "verify_otp.php") {
-    ?>
-        <link rel="stylesheet" href="assets/css/verify_otp.css">
-    <?php
-    } elseif ($file === "forget_password.php") {
-    ?>
-        <link rel="stylesheet" href="assets/css/forget_password.css">
-
-    <?php
-    }
-
     ?>
     <title>Document</title>
 </head>

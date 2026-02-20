@@ -9,6 +9,15 @@
     </div>
 </footer>
 
+<?php
+   
+// Print queued page-specific scripts
+if (function_exists('print_scripts')) {
+    print_scripts();
+}
+?>
+
+
 </body>
 
 </html>

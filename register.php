@@ -1,4 +1,7 @@
 <?php
+include_once "helpers/view_js.php";
+add_style("assets/css/style.css");
+add_style("assets/css/register.css");
 include_once "includes/header.php";
 ?>
 
@@ -89,5 +92,6 @@ include_once "includes/header.php";
 </main>
 
 <?php
+add_script("assets/js/register.js");
 include_once "includes/footer.php";
 ?>

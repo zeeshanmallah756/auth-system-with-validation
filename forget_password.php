@@ -1,4 +1,8 @@
 <?php
+include_once "helpers/view_js.php";
+add_style("assets/css/style.css");
+add_style("assets/css/forget_password.css");
+
 include_once "includes/header.php";
 ?>
 
