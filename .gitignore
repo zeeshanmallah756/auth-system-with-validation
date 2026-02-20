@@ -1,0 +1,9 @@
+# Environment file
+.env
+
+# Composer dependencies
+/vendor/
+
+# logs
+/logs/
+/*.log
