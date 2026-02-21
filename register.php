@@ -21,7 +21,7 @@ include_once "includes/header.php";
             <div class="form-group">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="first_name" placeholder="John">
-                <small id="first_name_msg"></small>
+                <small id="first-name-msg">Hello</small>
             </div>
 
             <!-- Last Name -->

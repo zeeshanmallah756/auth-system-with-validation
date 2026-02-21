@@ -10,7 +10,7 @@ function add_script($src){
 function print_scripts(){
     global $scriptQueue;
     foreach($scriptQueue as $src){
-        echo '<script src="' . $src . '"></script>';
+        echo '<script type="module" src="' . $src . '"></script>';
     }
 }
 
