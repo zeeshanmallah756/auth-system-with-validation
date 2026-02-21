@@ -21,28 +21,34 @@ include_once "includes/header.php";
             <div class="form-group">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" name="first_name" placeholder="John">
-                <small id="first-name-msg">Hello</small>
+                <small id="first-name-msg"></small>
             </div>
 
             <!-- Last Name -->
             <div class="form-group">
                 <label for="last-name">Last Name</label>
                 <input type="text" id="last-name" name="last_name" placeholder="Doe">
-                <small id="last_name_msg"></small>
+                <small id="last-name-msg"></small>
             </div>
 
             <!-- Email -->
             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" placeholder="john@example.com">
-                <small id="email_msg"></small>
+                <small id="email-msg"></small>
             </div>
 
             <!-- Password -->
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="••••••••">
-                <small id="password_msg"></small>
+                <small id="password-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Confirm Password</label>
+                <input type="password" id="password2" name="password2" placeholder="••••••••">
+                <small id="password2-msg"></small>
             </div>
 
             <!-- Profile Image -->
