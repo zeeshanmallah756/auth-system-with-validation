@@ -21,7 +21,7 @@
             </div>
             <div id="navlinks">
                 <?php
-                if ($file === "login.php") {
+                if (basename($_SERVER['PHP_SELF']) === "login.php") {
                 ?>
                     <a href="register.php">Register</a>
                 <?php
